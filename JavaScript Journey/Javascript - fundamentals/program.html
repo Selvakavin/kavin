@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="program.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/22987bb49a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="tit">
+          <h2>Hello sk</h2>
+    </div>
+    <input id="ip" onclick="func()" placeholder="0" type="number">
+    <br><br>
+    <div class="ryg">
+        <button onclick="colorcount('red')" class="btnred" ><h3 id="redcontent">0</h3></button>
+        <button onclick="colorcount('yellow')" class="btnyellow" ><h3 id="yellowcontent">0</h3></button>
+        <button onclick="colorcount('green')" class="btngreen" ><h3 id="greencontent">0</h3></button>
+        <button class="clearscore">Clear</button>
+    </div>
+
+    <div class="tipcalci">
+        <h4>Total Bill Amt ($):</h4>
+        <input id="bill" placeholder="0">
+        <h4>Tip(%):</h4>
+        <input id="tip" placeholder="0">
+        <h4>people</h4>
+        <button onclick="tipcalcifunc('+')" id="plus">+</button>
+        <h4 id="people">1</h4>
+        <button onclick="tipcalcifunc('-')" id="minus">-</button>
+        <h4>Total Amt($):<span id="tamt">0</span></h4>
+    </div> 
+    <h1 id="h1">hello</h1>   
+</body>
+<script src="program.js"></script>
+</html>

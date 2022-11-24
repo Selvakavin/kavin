@@ -1,0 +1,44 @@
+.btnred{
+    width: 50px;
+    height:40px;
+    background-color: red;
+    color:black;
+    cursor: pointer;
+}
+
+.btnyellow{
+    width: 50px;
+    height:40px;
+    background-color: rgb(206, 193, 17);
+    color:black;
+    cursor: pointer;
+}
+
+.btngreen{
+    width: 50px;
+    height:40px;
+    background-color: rgb(8, 197, 33);
+    color:black;
+    cursor: pointer;
+}
+
+.clearscore{
+    position: absolute;
+    top: 11%;
+    left:13%;
+    width: 50px;
+    height:40px;
+    background-color: rgb(211, 241, 215);
+    color:black;
+    cursor: pointer;
+}
+
+
+.tipcalci{
+    position: absolute;
+    top:30%;
+    left: 5%;;
+    width: 350px;
+    height: 370px;
+    background-color:rgba(27, 24, 24, 0.493)
+}
