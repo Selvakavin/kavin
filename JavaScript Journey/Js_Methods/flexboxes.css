@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    border: 5px solid purple;
+    border-radius: 2px;
+    padding: 10px;
+    height: 500px;
+    display: flex;
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*justify-content: space-around;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;    */
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    justify-content: center;
+
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: powderblue;
+    border: 2px solid purple;
+}
