@@ -1,6 +1,6 @@
-CASE:1
+//CASE:1
 
-AUTOMATIC PROMOTION
+//AUTOMATIC PROMOTION
 
 public class Main
 {
@@ -21,7 +21,7 @@ public class Main
 }
 
 
-CASE:2
+//CASE:2
 
 public class Main
 {
@@ -42,8 +42,8 @@ public class Main
 }
 
 
-CASE :3 
-EXACT MATCH OCCUR 
+//CASE :3 
+//EXACT MATCH OCCUR 
 
 public class Main
 {   
@@ -67,7 +67,7 @@ public class Main
 }
 
 
-CASE :4
+//CASE :4
 //figth with old and new method
 
 public class Main
