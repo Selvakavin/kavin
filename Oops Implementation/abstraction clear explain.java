@@ -1,5 +1,3 @@
-package pack2;
-import pack3.car;
 public class absdemo extends car {
 
 	public static void main(String[] args) {
@@ -38,7 +36,6 @@ public class absdemo extends car {
 
 //packege 3
 
-package pack3;
 
 public abstract class car {
 	private int oil=3;
