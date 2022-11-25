@@ -1,4 +1,4 @@
-BASIC PROGRAM 
+//BASIC PROGRAM 
 
 public class Main
 {   
@@ -18,7 +18,7 @@ public class Main
 }
 
 
-------------------------------------------------------------------
+//------------------------------------------------------------------
 class student 
 {
     String name;
