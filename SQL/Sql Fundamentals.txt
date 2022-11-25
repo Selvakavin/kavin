@@ -1,0 +1,123 @@
+Sql Fundamentals
+
+create database information;
+
+use information;
+create table infos(
+	reg int default 1,
+    name varchar(30),
+    dob varchar(30),
+    dept varchar(30)
+    );
+    
+describe info;
+select *from infos;
+
+insert into infos values(1,'sk','2002-3-30','ece');
+insert into infos values (2,'kavin','2002-4-4','ece'),(3,'ashok','2002-3-7','cse');
+alter table info modify name varchar(30) not null;
+truncate infos;
+alter table info add column phone int;
+update  info set phone =93601 where reg=2;
+delete  info from  phone;
+delete from info where reg=1;
+insert into info values(4,'selva','2020-3-2','eee',987655432);
+select * from info where name like 's%';   
+insert into info values(5,'kavinesh','2002-3-9','cse',987665875);
+update  infos set name='sk' where name='345';
+show index from info;
+create table address(
+door int,
+street varchar(30),
+pincode int);
+describe address;
+truncate address;
+select*from address;
+insert into address values (1,'mulanur',638106);
+insert into address values (2,'dharapuram',638144);																																				
+insert into address values (3,'tiruppur',638105);
+select * from info right join address on info.reg<>address.door;
+select info.name,info.dob,info.dept,address.pincode from info left join address on info.reg<>address.pincode;
+drop table info;
+
+
+SQL constarints
+
+
+create database  employee;
+use employee;
+create table branch(
+branchid int primary key auto_increment,
+branchname varchar(30),
+address varchar(30)
+);
+
+create table employee(
+empid int primary key auto_increment,
+ename varchar(30),
+salary int,
+foreign key(branchid) references branch(branchid)
+);
+select * from employee;
+
+
+SQL Joins
+
+create database information;
+
+use information;
+create table info(
+	reg int ,
+    name varchar(30),
+    dob varchar(30),
+    dept varchar(30)
+    );
+describe info;
+select *from info;
+insert into info values(1,'sk','2002-3-30','ece');
+insert into info values (2,'tk','2002-4-4','ece'),(3,'ashok','2002-3-7','cse');
+alter table info modify name varchar(30) not null;
+truncate info;
+alter table info add column phone int;
+update  info set phone =93601 where reg=2;
+delete  info from  phone;
+delete from info where reg=1;
+insert into info values(4,'selva','2020-3-2','eee',987655432);
+select * from info where name like 's%';   
+insert into info values(5,'kavinesh','2002-3-9','cse',987665875);
+
+show index from info;
+create table address(
+door int,
+street varchar(30),
+pincode int);
+describe address;
+truncate address;
+select*from address;
+insert into address values (1,'mulanur',638106);
+insert into address values (2,'dharapuram',638144);																																				
+insert into address values (3,'tiruppur',638105);
+select * from info right join address on info.reg<>address.door;
+select info.name,info.dob,info.dept,address.pincode from info left join address on info.reg<>address.pincode;
+drop table info;
+update info
+set name='kathir'
+where name='ashok';
+
+
+SQL Functions
+
+create database organisation;
+use organisation;
+create table employess (
+ num int auto_increment,
+ ename varchar(30),
+ phone varchar(10)
+);
+-- describe employess;
+insert into employess values(1,'sk','9360148930');
+insert into employess values(2,'tk','9360148930');
+select distinct *from employess;
+select * from employess where num=1;
+select * from employess order by num desc;
+select min(num) as list from employess;
