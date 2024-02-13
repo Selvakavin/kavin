@@ -1,0 +1,571 @@
+html{
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    background-color: whitesmoke;
+    transition: all 3s;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    display: flex;
+    flex-grow: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    padding: 5px;
+}
+
+.header__title--desc {
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    letter-spacing: 5px;
+}
+
+.bar {
+    font-size: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+#menu,
+#close {
+    display: none;
+}
+
+.header__nav {
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+
+}
+
+.header__nav--item {
+    text-decoration: none;
+    font-family: cursive;
+    background-color: white;
+    padding: 5px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0px 0px 0px .9px blue;
+    color: black;
+}
+
+.header__nav--item:hover {
+    background-color: black;
+    color: white;
+    letter-spacing: 4px;
+    transition: all 1s;
+    border-radius: 4px;
+    box-shadow: none;
+}
+#theme{
+    background-color: black;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: row;
+}
+#themestatus{
+    font-size: 10px;
+    text-transform: lowercase;
+    align-items: center;
+    color: white;
+    display: none;
+}
+#theme:hover #themestatus{
+    display: block;
+}
+#theme:hover{
+    letter-spacing: 1px;
+    transition: all .6s;
+}
+#dark{
+    color: black;
+    font-size: 18px;
+}
+#light{
+    color: white;
+    font-size: 18px;
+}
+/*  container */
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+/* Home */
+
+.home {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.home__profile {
+    padding: 20px;
+}
+
+.home__profile--image,
+.about-me__container--image {
+    border-radius: 150px;
+    width: 250px;
+    height: 250px;
+    /* box-shadow: 9px 13px 20px 10px rgb(250, 248, 114); */
+    box-shadow: 0px 0px 0px 1px gray, 0px 0px 4px 1px;
+}
+.home__profile-description {
+    padding: 30px;
+}
+
+.home__profile-description--name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+}
+
+.home__profile-description--about {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.home_profile-description_icons {
+    display: flex;
+    padding: 2px;
+}
+
+#home_profile-description_icons-ele {
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+
+#home_profile-description_icons-ele:hover {
+    font-size: 23px;
+}
+
+.home__profile-description-resume--link {
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 0px 0px 0px .4px black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home__profile-description-resume--link:hover {
+    background-color: black;
+    color: white;
+    letter-spacing: 5px;
+    transition: all 1s;
+    border-radius: 4px;
+}
+
+/* End Home */
+
+/* about me*/
+.about-me {
+    margin: 0;
+    padding: 20px;
+}
+
+.about-me__tittle {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me__container--image {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+
+.about-me__tittle--content {
+    font-size: 25px;
+    color: blue;
+}
+
+.about-me__content,
+.about-me__image {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me__image {
+    padding: 20px 20px 20px 0px;
+}
+
+.about-me__content-desc {
+    display: flex;
+}
+
+.about-me__content--text {
+    font-size: 16px;
+    text-indent: 70px;
+    max-width: 810px;
+    line-height: 25px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 1px rgba(244, 243, 243, 0.909), 0px 0px 9px 1px;
+}
+
+.experience-education {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.aboutme-card {
+    background-color: rgba(0, 0, 0, 0.557);
+    box-shadow: 0px 0px 0px 1.5px black, 0px 0px 9px 1px black;
+    color: whitesmoke;
+    border-radius: 5px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.aboutme-card__tittle {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.aboutme-card__container {
+    padding: 5px;
+}
+
+.aboutme-card__container--block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* end about me*/
+
+/*Skill */
+.skill {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.skill-tittle {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.skill__card {
+    background-color: rgba(0, 0, 0, 0.557);
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1.5px black, 0px 0px 9px 1px black;
+    margin-top: 30px;
+    width: 240px;
+}
+
+.skill__card-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.skill__card-items {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skill__card-items-ele {
+    margin: 10px;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.258);
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px .9px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.skill__card-item--content {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 0px 0px 0px 2px grey;
+}
+
+.skill__card-items-desc {
+    margin-left: 15px;
+    color: white;
+}
+
+/* End Skill */
+
+/* Contact Me */
+
+.contact {
+    margin: 0;
+    padding: 20px;
+}
+
+.contact-tittle {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    margin-top: 20px;
+}
+
+.contact__form {
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px rgba(244, 243, 243, 0.909), 0px 0px 9px 1px;
+}
+
+.contact__form-element {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact--item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact--item label {
+    font-weight: bold;
+}
+
+.contact--item-inp {
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.027);
+    box-shadow: 0px 0px 0px 1px rgba(244, 243, 243, 0.909), 0px 0px 9px 1px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact--item-inp:hover {
+    box-shadow: 0px 0px 0px 1px blue, 0px 0px 9px 1px;
+    cursor: pointer;
+}
+
+.contact--item-inp:focus {
+    outline-color: blue;
+}
+
+.contact--item textarea {
+    width: 500px;
+    height: 100px;
+}
+
+.contact--item-submit {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact--item-submit-ele {
+    padding: 10px 30px;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0px 0px 0px 1.5px grey, 0px 0px 9px 1px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact--item-submit-ele:hover {
+    background-color: black;
+    color: white;
+    letter-spacing: 8px;
+    transition: all 1s;
+    border-radius: 4px;
+}
+
+/* End contact me */
+
+/* Footer*/
+.footer {
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.footer__description {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__description--content {
+    letter-spacing: 2px;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    text-shadow: 1px .1px white;
+    word-spacing: 2px;
+    padding: 5px;
+}
+
+/* End Footer*/
+
+/* side bar*/
+.sidebar {
+    flex-direction: column;
+    gap: 20px;
+    height: 60%;
+    width: 0;
+    position: fixed;
+    top: 35px;
+    right: 0;
+    background-color: lightgray;
+    opacity: .9;
+    transition: .5s;
+    border-radius: 5px;
+    overflow-x: hidden;
+}
+
+.sidebar__close {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar__close i {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.sidebar__close i:hover {
+    font-size: 22px;
+}
+
+.sidebar__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar__nav--item {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+    color: black;
+    letter-spacing: .6px;
+    border-radius: 3px;
+}
+
+.sidebar__nav--item:hover {
+    letter-spacing: .9px;
+    color: blue;
+}
+
+/*  end of side bar*/
+
+/* Media queries */
+
+@media screen and (max-width:600px) {
+    .skill__card-items-desc {
+        display: none;
+    }
+
+    .skill__card-items-ele {
+        width: 50px;
+        border-radius: 4px;
+        margin-top: 5px;
+        padding: 5px;
+    } 
+
+    .skill__card-items {
+        padding: 10px;
+    }
+
+    .skill__card-items {
+        padding: 0px;
+    }
+
+    #Postgree {
+        display: none;
+    }
+
+    .home__profile--image {
+        border-radius: 150px;
+        width: 200px;
+        height: 200px;
+        /* box-shadow: 9px 13px 20px 10px rgb(250, 248, 114); */
+        box-shadow: 0px 0px 0px 2px grey;
+    }
+
+    
+    .about-me__container--image {
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+    }
+    .contact--item textarea {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .contact--item textarea {
+        width: 170px;
+    }
+
+    .contact--item-inp {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .header__nav {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    .modal {
+        display: block;
+    }
+}

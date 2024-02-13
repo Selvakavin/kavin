@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Selvakavin Sellamuthu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d57a0d8c80.js" crossorigin="anonymous"></script>
+</head>
+<body onresize="closeSidebar()" id="body">
+    <div class="header">
+        <div class="header__title">
+            <p class="header__title--desc">Portfolio</p>
+        </div>
+        <div class="bar">
+            <i class="fa-solid fa-bars" id="menu"></i>
+        </div>
+        <div class="header__nav">
+            <a href="#home" class="header__nav--item">Home</a>
+            <a href="#aboutme" class="header__nav--item">About me</a>
+            <a href="#skillset" class="header__nav--item">Skills</a>
+            <a href="#connectme"class="header__nav--item">Contact</a>            
+            <div class="header__nav--item" id="theme" onclick="themeChange()" onmouseover="themeStatusChange()">
+                <i class="fa-solid fa-moon" id="light"></i>
+                <small id="themestatus">Light</small>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="sidebar__close">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <div class="sidebar__nav">
+            <a href="#home" class="sidebar__nav--item" onclick="closeSidebar()">Home</a>
+            <a href="#aboutme"   class="sidebar__nav--item" onclick="closeSidebar()">About me</a>
+            <a href="#skillset" class="sidebar__nav--item" onclick="closeSidebar()">Skills</a>
+            <a href="#connectme" class="sidebar__nav--item" onclick="closeSidebar()">Contact</a>
+            <div class="header__nav--item" id="theme" onclick="themeChange(),closeSidebar()">
+                <i class="fa-solid fa-moon" id="light"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Home -->
+        <div class="home" id="home">
+            <div class="home__profile">
+                <img src="Selvakavin.jpg" alt="Image" class="home__profile--image">
+            </div>
+            <div class="home__profile-description">
+                <h2 class="home__profile-description--name" id="username"></h2>
+                <h3 class="home__profile-description--about" id="role"></h3>
+                <div class="home_profile-description_icons">
+                    <a target="_blank" href="https://www.linkedin.com/in/selvakavin-sellamuthu-sk009/" class="fa fa-linkedin-square" id="home_profile-description_icons-ele"></a>
+                    <a href="mailto:kavinsellamuthu004@gmail.com" class="fa-solid fa-envelope" id="home_profile-description_icons-ele"></a>
+                    <a href="tel:+919360148930" class="fa-solid fa-phone" id="home_profile-description_icons-ele"></a>
+                    <a target="_blank" href="https://api.whatsapp.com/send/?phone=9360148930&text&type=phone_number&app_absent=0" class="fa fa-whatsapp" id="home_profile-description_icons-ele"></a>                    
+                </div>
+                <div class="home__profile-description-resume">
+                    <a target="_blank" download="Selvakavin_Resume" href="https://drive.google.com/file/d/1UyNUSXHouIAFRMWo6uaBVf9tzS1wr67H/view?usp=sharing" class="home__profile-description-resume--link" >Download Resume</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Home -->
+
+        <!--About me-->
+        <div class="about-me"  id="aboutme">
+
+            <div class="about-me__tittle">
+                <h3 class="about-me__tittle--content">
+                    About Me
+                </h3>
+            </div>
+
+            <div class="about-me__container">
+                <div class="about-me__content">
+                    <div class="about-me__content-desc">
+                        <h4 class="about-me__content--text">
+                            I am full stack web developer with a passion for creating interactive and responsive web
+                            applications.
+                            I have experience working with Java, Springboot, Sql, Html, Css, Javascript, Angular. I am
+                            quick
+                            learner and i am
+                            always looking to expand my knowledge and skill set. I am excited to work with others to
+                            create
+                            amazing applications.
+                        </h4>
+                    </div>
+                </div>
+                <div class="about-me__image">
+                    <img src="sk.png" alt="Image can't loaded" class="about-me__container--image">
+                </div>
+            </div>
+
+            <div class="experience-education">
+                <div class="aboutme-card">
+                    <div class="aboutme-card__tittle">
+                        <h4 class="about-me__tittle-desc">Education</h4>
+                    </div>
+                    <div class="aboutme-card__container">
+                        <div class="aboutme-card__container--block">
+                            <i class="fa-sharp fa-solid fa-hand-point-right"></i>
+                            <h4 class="aboutme-card__container--block-desc">B.E Electronics and Communication
+                                Engineering in 2023. (First class)</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="aboutme-card">
+                    <div class="aboutme-card__tittle">
+                        <h4 class="about-me__tittle-desc">Experience</h4>
+                    </div>
+                    <div class="aboutme-card__container">
+                        <div class="aboutme-card__container--block">
+                            <i class="fa-sharp fa-solid fa-hand-point-right"></i>
+                            <h4 class="aboutme-card__container--block-desc">Software Engineer in Sony India Software
+                                Centre since 2023.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About me -->
+
+
+        <!-- Skills -->
+        <div class="skill-tittle" id="skillset">
+            <h2 style="color: blue;">Skills</h2>
+        </div>
+        <div class="skill">
+            <div class="skill__card">
+                <div class="skill__card-title">
+                    <h3>Frontend </h3>
+                </div>
+                <div class="skill__card-items">
+                    <div class="skill__card-items-ele">
+                        <div class="skill__card-item--content">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <div class="skill__card-items-desc">
+                            <h4 class="skill__card-item-desc--text">Html</h4>
+                        </div>
+                    </div>
+                    <div class="skill__card-items-ele">
+                        <div class="skill__card-item--content">
+                            <i class="fa-brands fa-css3"></i>
+                        </div>
+                        <div class="skill__card-items-desc">
+                            <h4 class="skill__card-item-desc--text">Css </h4>
+                        </div>
+                    </div>
+                    <div class="skill__card-items-ele">
+                        <div class="skill__card-item--content">
+                            <i class="fa-brands fa-square-js"></i>
+                        </div>
+                        <div class="skill__card-items-desc">
+                            <h4 class="skill__card-item-desc--text">Javascript</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill__card">
+                <div class="skill__card-title">
+                    <h3>Backend</h3>
+                </div>
+                <div class="skill__card-items">
+                    <div class="skill__card-items-ele">
+                        <div class="skill__card-item--content">
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+                        <div class="skill__card-items-desc">
+                            <h4 class="skill__card-item-desc--text">Java</h4>
+                        </div>
+                    </div>
+                    <div class="skill__card-items-ele">
+                        <div class="skill__card-item--content">
+                            <i class="fa-brands fa-c"><small style="font-size: 15px;">#</small></i>
+                        </div>
+                        <div class="skill__card-items-desc">
+                            <h4 class="skill__card-item-desc--text">C#</h4>
+                        </div>
+                    </div>
+                    <div class="skill__card-items-ele">
+                        <div class="skill__card-item--content">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <div class="skill__card-items-desc">
+                            <h4 class="skill__card-item-desc--text">Python</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill__card">
+                <div class="skill__card-title">
+                    <h3>Frameworks</h3>
+                </div>
+                <div class="skill__card-items">
+                    <div class="skill__card-items-ele">
+                        <div class="skill__card-item--content">
+                            <i class="fa-solid fa-power-off"></i>
+                        </div>
+                        <div class="skill__card-items-desc">
+                            <h4 class="skill__card-item-desc--text">Springboot</h4>
+                        </div>
+                    </div>
+                    <div class="skill__card-items-ele">
+                        <div class="skill__card-item--content">
+                            <i class="fa-brands fa-battle-net"></i>
+                        </div>
+                        <div class="skill__card-items-desc">
+                            <h4 class="skill__card-item-desc--text">.Net</h4>
+                        </div>
+                    </div>
+                    <div class="skill__card-items-ele">
+                        <div class="skill__card-item--content">
+                            <i class="fa-brands fa-angular"></i>
+                        </div>
+                        <div class="skill__card-items-desc">
+                            <h4 class="skill__card-item-desc--text">Angular</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill__card">
+                <div class="skill__card-title">
+                    <h3>Database</h3>
+                </div>
+                <div class="skill__card-items">
+                    <div class="skill__card-items-ele">
+                        <div class="skill__card-item--content">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="skill__card-items-desc">
+                            <h4 class="skill__card-item-desc--text">SQL</h4>
+                        </div>
+                    </div>
+                    <div class="skill__card-items-ele" id="Postgree">
+                        <div class="skill__card-item--content">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="skill__card-items-desc">
+                            <h4 class="skill__card-item-desc--text">Postgree</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Skills -->
+
+        <!-- Contact us-->
+        <div class="contact" id="connectme">
+            <div class="contact-tittle">
+                <h2 class="contact-tittle-desc">Connect Me</h2>
+            </div>
+            <form action="" class="contact__form">
+                <div class="contact__form-element">
+                    <div class="contact--item">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Enter the your Name" class="contact--item-inp" required>
+                    </div>
+                    <div class="contact--item">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter the your Email" class="contact--item-inp" required>
+                    </div>
+                    <div class="contact--item">
+                        <label for="mobile">Mobile</label>
+                        <input type="number" placeholder="Enter the your Mobile" class="contact--item-inp" required>
+                    </div>
+                    <div class="contact--item" >
+                        <label for="desc">Description</label>
+                        <textarea name="" id="" placeholder="Enter the Description"
+                            class="contact--item-inp" required></textarea>
+                    </div>
+                </div>
+                <div class="contact--item-submit">
+                    <button type="submit" class="contact--item-submit-ele">Submit</button>
+                </div>
+            </form>
+        </div>
+        <!-- End Contact us-->
+
+    </div>
+    <div class="footer">
+        <div class="footer__description">
+            <h4 class="footer__description--content">
+                Selvakavin Sellamuthu
+            </h4>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
