@@ -10,6 +10,7 @@ html{
 body {
     background-color: whitesmoke;
     transition: all 3s;    
+    font-size: 15px;
     font-family: "Poppins";
 }
 
