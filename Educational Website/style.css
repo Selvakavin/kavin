@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", "sans-serif";
+}
+
+.header {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  box-shadow: 0px 2px 0px 0px grey;
+}
+.header__left {
+  display: flex;
+  gap: 2%;
+  flex-grow: 5;
+}
+.logo {
+}
+.logo--img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.links {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.links a {
+  justify-content: space-around;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.header__right {
+  display: flex;
+
+  flex-grow: 1;
+}
+.header__right-buttons {
+  padding: 7px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.header__right-buttons a {
+  background-color: rgba(120, 216, 120, 0.24);
+  padding: 5px;
+  border-radius: 50%;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+.container {
+  margin: 0px;
+  padding: 0px;
+}
+.container__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  margin: 1px;
+  background: linear-gradient(
+      135deg,
+      rgba(190, 183, 183, 0.178),
+      rgba(255, 255, 255, 0.021)
+    ),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="20" viewBox="0 0 20 20" fill="black"><circle cx="2" cy="2" r=".9" /></svg>');
+}
+.container__info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 2px;
+}
+.info-tittle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.info-tittle--desc {
+  font-size: 30px;
+}
+.info-tittle--about {
+  font-size: 16px;
+  color: grey;
+}
+.info-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.info-buttons button {
+  padding: 5px 15px 5px 15px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.info-buttons-course {
+  background-color: rgb(158, 233, 158);
+}
+.info-buttons-coding {
+  background-color: rgba(128, 128, 128, 0.301);
+}
+.info__search {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+.info__search-ele {
+  padding: 10px;
+  border-radius: 9px;
+  border: none;
+  box-shadow: 0px 0px 2px 1px grey;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+.bx-search {
+  position: relative;
+  left: -25px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* courses */
+
+.course {
+  margin: 1px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.course__header,
+.articles__header {
+  display: flex;
+  justify-content: space-between;
+}
+.course__header--desc,
+.articles__header--desc {
+  padding: 20px;
+  font-size: 20px;
+}
+.course__seeAll,
+.articles__seeAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course__header--link,
+.articles__header--link {
+  text-decoration: none;
+  color: blue;
+}
+.bx-chevrons-right {
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+  color: blue;
+}
+.course__content {
+  margin: 0;
+}
+.course__block {
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-height: 300px;
+  overflow-y: hidden;
+  transition: all 4s;
+}
+.course-element {
+  width: 400px;
+  
+  margin: 5px;
+  margin-top: 50px;
+}
+.element-block1 {
+  display: flex;
+  padding: 2%;
+  justify-content: space-around;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px grey;
+}
+.element-block1-image{
+  display: flex;
+  align-items: center;
+}
+.element-block1-image--content {
+  width: 90px;
+  height: 100px;
+  border-radius: 10px;
+}
+.element-block1-content {
+  margin-top: 5px;
+}
+.element-block1-content-tittle {
+  padding: 10px;
+}
+.element-block1-content-tittle--desc {
+  font-weight: bold;
+  text-align: justify;
+}
+.element-block1-content-details {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: grey;
+}
+.element-block2 {
+  margin-top: 10px;
+  box-shadow: 0px 0px 2px 1px grey;
+  border-radius: 5px;
+}
+.course__extradetails {
+  display: flex;
+  justify-content: space-between;
+}
+.course__price {
+  padding: 10px;
+}
+.course-feartures {
+  padding: 10px;
+}
+.course__price h4 {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.course__price--old strike {
+  font-size: 11px;
+  color: grey;
+  letter-spacing: 0.7px;
+}
+.course-feartures-desc {
+  background-color: rgb(146, 206, 146);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* comments */
+.comments {
+  margin: 2px;
+}
+.comments__header {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.comments-desc {
+  font-size: 20px;
+  font-weight: bold;
+}
+.comments__info {
+  display: flex;
+  justify-content: center;
+}
+.comments__info-desc {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+.comments__container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.comment__element {
+  display: flex;
+  gap: 10px;
+  box-shadow: 0px 0px 2px 1px grey;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+  margin-top: 20px;
+}
+.comment__element-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.comment__element-desc {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+/* Articles */
+.articles__container {
+  margin: 10px;
+}
+.articles-block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.articles-block__element {
+  max-width: 220px;
+  margin-top: 30px;
+} 
+.articles__element-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 2px 1px grey;
+}
+.articles__element-content--img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+}
+.articles__element-content--desc {
+  font-weight: bold;
+  font-size: 12px;
+}
+.articles__element-footer {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 7px;
+  box-shadow: 0px 0px 2px 1px grey;
+} 
+.articles__element-footer--views {
+  background-color: rgba(224, 190, 131, 0.911);
+  margin: 5px;
+  margin-left: 1px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.articles__element-footer__seeAll {
+  display: flex;
+  align-items: center;
+}
+.articles__element-footer--link {
+  text-decoration: none;
+  color: blue;
+  font-size: 12px;
+}
+
+/* footer */
+.footer{
+  margin: 0px;
+  background-color: green;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: 50px;
+}
+.footer__block{
+  padding: 1px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+} 
+.footer__element{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer__element-tittle{
+  display: flex;
+  justify-content: center;
+}
+.footer__element-tittle-desc{
+  font-weight: bold;
+  font-size: 15px;
+} 
+.footer__element-links{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer__element-links a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+.footer__element-aboutsus{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.footer__element-aboutsus-desc{
+  color: whitesmoke;
+  text-align: justify;
+}
+.footer__element-icons{
+  display: flex;
+  justify-content: space-around;
+  max-width: 130px;
+}
+.footer__element-icons a{
+  color: white;
+  font-size: 20px;
+}
+.footer__copyright{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.footer__copyright--desc{
+  color: white;
+  font-size: 13px;
+}
+a:hover{
+  transition: .7s all;
+   letter-spacing: 1px;
+} 
+button:hover{
+  transition: 1s all;
+  color: black;
+  letter-spacing: 1px;
+  background-color: white;
+  box-shadow: 0px 0px 2px 1px grey;
+}

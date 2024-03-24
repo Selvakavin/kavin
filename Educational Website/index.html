@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Educational Landing Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__left">
+            <div class="logo">
+                <img src="sk.jpg" alt="" class="logo--img">
+            </div>
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">Courses</a>
+                <a href="">Articles</a>
+                <a href="">Podcasts</a>
+                <a href="">About us</a>
+                <a href="">Contact us</a>
+            </div>
+        </div>
+        <div class="header__right">
+            <div>
+                <div class="header__right-buttons">
+                    <a href=""><i class='bx bx-support'></i></a>
+                    <a href=""><i class='bx bx-basket'></i></a>
+                    <a href=""><i class='bx bx-user'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container__info">
+            <div class="container__info-block">
+                <div class="info-tittle">
+                    <h4 class="info-tittle--desc">Learn Coding Easier with us</h4>
+                    <h5 class="info-tittle--about">Learn Programming With Coach and Mentor</h5>
+                </div>
+                <div class="info-buttons">
+                    <button class="info-buttons-course">See Courses</button>
+                    <button class="info-buttons-coding">What is Coding?</button>
+                </div>
+                <div class="info__search">
+                    <input type="text" class="info__search-ele" placeholder="Search Courses">
+                    <i class='bx bx-search'></i>
+                </div>
+            </div>
+        </div>
+        <div class="course">
+            <div class="course__header">
+                <h4 class="course__header--desc">Popular Courses</h4>
+                <div class="course__seeAll" onclick="showAllCourses()">
+                    <a  class="course__header--link">See all</a>
+                    <i class='bx bx-chevrons-right'></i>
+                </div>
+            </div>
+            <div class="course__content">
+                <div class="course__block">
+                    <div class="course-element">
+                        <div class="element-block1">
+                            <div class="element-block1-image">
+                                <img src="java.png" alt="" class="element-block1-image--content">
+                            </div>
+                            <div class="element-block1-content">
+                                <div class="element-block1-content-tittle">
+                                    <h4 class="element-block1-content-tittle--desc">Java Basics to Advanced Course
+                                    </h4>
+                                </div>
+                                <div class="element-block1-content-details">
+                                    <h5 class="element-block1-content-details--autho">Author:James Gosling</h5>
+                                    <h5 class="element-block1-content-details--duration">Duration:60 hrs</h5>
+                                    <h5 class="element-block1-content-details--lifetime">Lifetime Support</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-block2">
+                            <div class="course__extradetails">
+                                <div class="course__price">
+                                    <h4 class="course__price--new">New Price 1599</h4>
+                                    <h4 class="course__price--old"><strike>Old Price 2000</strike></h4>
+                                </div>
+                                <div class="course-feartures">
+                                    <h4 class="course-feartures-desc">20% Discounts</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-element">
+                        <div class="element-block1">
+                            <div class="element-block1-image">
+                                <img src="python.png" alt="" class="element-block1-image--content">
+                            </div>
+                            <div class="element-block1-content">
+                                <div class="element-block1-content-tittle">
+                                    <h4 class="element-block1-content-tittle--desc">Python Basics to Advanced Course
+                                    </h4>
+                                </div>
+                                <div class="element-block1-content-details">
+                                    <h5 class="element-block1-content-details--autho">Author:Guido van Rossum</h5>
+                                    <h5 class="element-block1-content-details--duration">Duration:40 hrs</h5>
+                                    <h5 class="element-block1-content-details--lifetime">Lifetime Support</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-block2">
+                            <div class="course__extradetails">
+                                <div class="course__price">
+                                    <h4 class="course__price--new">New Price 1350</h4>
+                                    <h4 class="course__price--old"><strike>Old Price 1500</strike></h4>
+                                </div>
+                                <div class="course-feartures">
+                                    <h4 class="course-feartures-desc">10% Discounts</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-element">
+                        <div class="element-block1">
+                            <div class="element-block1-image">
+                                <img src="js.png" alt="" class="element-block1-image--content">
+                            </div>
+                            <div class="element-block1-content">
+                                <div class="element-block1-content-tittle">
+                                    <h4 class="element-block1-content-tittle--desc">JavaScript Full Course from Scratch
+                                    </h4>
+                                </div>
+                                <div class="element-block1-content-details">
+                                    <h5 class="element-block1-content-details--autho">Author:Brendan Eich</h5>
+                                    <h5 class="element-block1-content-details--duration">Duration:30 hrs</h5>
+                                    <h5 class="element-block1-content-details--lifetime">Lifetime Support</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-block2">
+                            <div class="course__extradetails">
+                                <div class="course__price">
+                                    <h4 class="course__price--new">New Price 1275</h4>
+                                    <h4 class="course__price--old"><strike>Old Price 1499</strike></h4>
+                                </div>
+                                <div class="course-feartures">
+                                    <h4 class="course-feartures-desc">15% Discounts</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-element">
+                        <div class="element-block1">
+                            <div class="element-block1-image">
+                                <img src="ai.png" alt="" class="element-block1-image--content">
+                            </div>
+                            <div class="element-block1-content">
+                                <div class="element-block1-content-tittle">
+                                    <h4 class="element-block1-content-tittle--desc">Artificial Intelligence from Scratch
+                                    </h4>
+                                </div>
+                                <div class="element-block1-content-details">
+                                    <h5 class="element-block1-content-details--autho">Author:Guido van Rossum</h5>
+                                    <h5 class="element-block1-content-details--duration">Duration:40 hrs</h5>
+                                    <h5 class="element-block1-content-details--lifetime">Lifetime Support</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-block2">
+                            <div class="course__extradetails">
+                                <div class="course__price">
+                                    <h4 class="course__price--new">New Price 1999</h4>
+                                    <h4 class="course__price--old"><strike>Old Price 2500</strike></h4>
+                                </div>
+                                <div class="course-feartures">
+                                    <h4 class="course-feartures-desc">20% Discounts</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--comments-->
+        <div class="comments">
+            <div class="comments__header">
+                <h4 class="comments-desc">Students Comments</h4>
+            </div>
+            <div class="comments__info">
+                <h4 class="comments__info-desc">These are our students comments. This will help you choose courses
+                    better.Also you can contact us for more info.</h4>
+            </div>
+
+            <div class="comments__container">
+                <div class="comment__element">
+                    <div>
+                        <img src="https://source.unsplash.com/random/900×700/?boy/1" alt=""
+                            class="comment__element-img">
+                    </div>
+                    <h4 class="comment__element-desc">Clear and concise explanations!</h4>
+                </div>
+                <div class="comment__element">
+                    <div>
+                        <img src="https://source.unsplash.com/random/900×700/?girl/1" alt=""
+                            class="comment__element-img">
+                    </div>
+                    <h4 class="comment__element-desc">Engaging presentation style!</h4>
+                </div>
+                <div class="comment__element">
+                    <div>
+                        <img src="https://source.unsplash.com/random/900×700/?boy/2" alt=""
+                            class="comment__element-img">
+                    </div>
+                    <h4 class="comment__element-desc">Interactive quizzes are fantastic!</h4>
+                </div>
+                <div class="comment__element">
+                    <div>
+                        <img src="https://source.unsplash.com/random/900×700/?girl/2" alt=""
+                            class="comment__element-img">
+                    </div>
+                    <h4 class="comment__element-desc">Well-structured course layout!</h4>
+                </div>
+            </div>
+        </div>
+
+        <!--blog articles-->
+        <div class="articles">
+            <div class="articles__header">
+                <h4 class="articles__header--desc">Blog Articles</h4>
+                <div class="articles__seeAll">
+                    <a href="" class="articles__header--link">See all</a>
+                    <i class='bx bx-chevrons-right'></i>
+                </div>
+            </div>
+            <div class="articles__container">
+                <div class="articles-block">
+                    <div class="articles-block__element">
+                        <div class="articles__element-content">
+                            <img src="https://source.unsplash.com/random/900×700/?software" alt="" class="articles__element-content--img">
+                            <h4 class="articles__element-content--desc">What is unique brand?</h4>
+                        </div>
+                        <div class="articles__element-footer">
+                            <h4 class="articles__element-footer--views">+490 Views</h4>
+                            <div class="articles__element-footer__seeAll">
+                                <a href="" class="articles__element-footer--link">See all</a>
+                                <i class='bx bx-chevrons-right'></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="articles-block__element">
+                        <div class="articles__element-content">
+                            <img src="https://source.unsplash.com/random/900×700/?security" alt="" class="articles__element-content--img">
+                            <h4 class="articles__element-content--desc">What is unique brand?</h4>
+                        </div>
+                        <div class="articles__element-footer">
+                            <h4 class="articles__element-footer--views">+490 Views</h4>
+                            <div class="articles__element-footer__seeAll">
+                                <a href="" class="articles__element-footer--link">See all</a>
+                                <i class='bx bx-chevrons-right'></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="articles-block__element">
+                        <div class="articles__element-content">
+                            <img src="https://source.unsplash.com/random/900×700/?code" alt="" class="articles__element-content--img">
+                            <h4 class="articles__element-content--desc">What is unique brand?</h4>
+                        </div>
+                        <div class="articles__element-footer">
+                            <h4 class="articles__element-footer--views">+490 Views</h4>
+                            <div class="articles__element-footer__seeAll">
+                                <a href="" class="articles__element-footer--link">See all</a>
+                                <i class='bx bx-chevrons-right'></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="footer">
+            <div class="footer__block">
+                <div class="footer__element">
+                    <div class="footer__element-tittle">
+                        <h4 class="footer__element-tittle-desc">Site Links</h4>
+                    </div>
+                    <div class="footer__element-links">
+                        <a href="">Articles</a>
+                        <a href="">About us</a>
+                        <a href="">Contact us</a>
+                        <a href="">Courses</a>
+                    </div>
+                </div>
+                <div class="footer__element">
+                    <div class="footer__element-tittle">
+                        <h4 class="footer__element-tittle-desc">Other Pages</h4>
+                    </div>
+                    <div class="footer__element-links">
+                        <a href="">401 Page</a>
+                        <a href="">Login|Register</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="footer__element">
+                    <div class="footer__element-tittle">
+                        <h4 class="footer__element-tittle-desc">Collaboration</h4>
+                    </div>
+                    <div class="footer__element-links">
+                        <a href="">Work With us</a>
+                        <a href="">Affiliate</a>
+                        <a href="">Support</a>
+                    </div>
+                </div>
+                <div class="footer__element" style="max-width: 300px;">
+                    <div class="footer__element-tittle">
+                        <h4 class="footer__element-tittle-desc">About us</h4>
+                    </div>
+                    <div class="footer__element-aboutsus">
+                        <h5 class="footer__element-aboutsus-desc">We empower learners worldwide with interactive
+                            courses, expert instructors, and cutting-edge resources for lifelong learning excellence.
+                        </h5>
+                        <div class="footer__element-icons">
+                            <a href=""><i class='bx bxl-instagram'></i></a>
+                            <a href=""><i class='bx bxl-linkedin'></i></a>
+                            <a href=""><i class='bx bxl-twitter'></i></a>
+                            <a href=""><i class='bx bx-envelope'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <h4 class="footer__copyright--desc">Copyright &#9426 2024 Selvakavin. All Rights Reserved.</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+function showAllCourses() {
+    document.querySelector(".course__block").style.maxHeight="2000px";
+}
+</script>
+
+</html>
