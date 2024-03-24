@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    padding: -6px;
+    letter-spacing: 1.5px;
+}
+.container{
+    padding: 10px;
+} 
+.container__battery{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px 0px blue,0px 0px 6px 0px;
+}  
+.container__battery-content{
+    /* background-color: rgba(41, 37, 37, 0.288); */
+    border-radius: 15px;
+    /* box-shadow: 0px 0px 10px 0px black,0px 0px 6px 0px; */
+}
+.container__battery-ele{
+    background-color: white;
+    width:100%;
+    height:20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.battery-ele--size{
+    transition: all 3s;
+    width: 0%;
+    background-color: green;
+    height: 100%;
+    border-radius: 8px;
+}
