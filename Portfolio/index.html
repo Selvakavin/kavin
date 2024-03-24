@@ -20,6 +20,7 @@
             <a href="#home" class="header__nav--item">Home</a>
             <a href="#aboutme" class="header__nav--item">About me</a>
             <a href="#skillset" class="header__nav--item">Skills</a>
+            <a href="#project" class="header__nav--item">Projects</a>
             <a href="#connectme"class="header__nav--item">Contact</a>            
             <div class="header__nav--item" id="theme" onclick="themeChange()" onmouseover="themeStatusChange()">
                 <i class="fa-solid fa-moon" id="light"></i>
@@ -35,6 +36,7 @@
             <a href="#home" class="sidebar__nav--item" onclick="closeSidebar()">Home</a>
             <a href="#aboutme"   class="sidebar__nav--item" onclick="closeSidebar()">About me</a>
             <a href="#skillset" class="sidebar__nav--item" onclick="closeSidebar()">Skills</a>
+            <a href="#project" class="sidebar__nav--item" onclick="closeSidebar()">Projects</a>
             <a href="#connectme" class="sidebar__nav--item" onclick="closeSidebar()">Contact</a>
             <div class="header__nav--item" id="theme" onclick="themeChange(),closeSidebar()">
                 <i class="fa-solid fa-moon" id="light"></i>
@@ -249,35 +251,105 @@
         </div>
         <!-- End Skills -->
 
+        <!--Projects-->
+
+        <div class="project">
+            <div class="project__header">
+                <h2 class="project__heade-desc">Projects</h2>
+            </div>
+            <div class="project__container">
+                <div class="project__container-element">
+                    <div class="element-title">
+                        <h4 class="element-tittle-desc">Profile card</h4>
+                    </div>
+                    <div class="element-content">
+                            <h4 class="project-element--desc">My profile card showcases my name, profession, skills, and achievements, presenting a concise snapshot of my professional identity. </h4>
+                    </div>
+                    <div class="element-link">
+                        <a target="_blank" href="" class="element-link-btn">Host</a>
+                    </div>
+                </div>
+                <div class="project__container-element">
+                    <div class="element-title">
+                        <h4 class="element-tittle-desc">Todo List</h4>
+                    </div>
+                    <div class="element-content">
+                            <h4 class="project-element--desc">A to-do list project helps organize tasks, prioritize activities, and manage time effectively for increased productivity and efficiency.". </h4>
+                    </div>
+                    <div class="element-link">
+                        <a href="" class="element-link-btn">Host</a>
+                    </div>
+                </div>
+                <div class="project__container-element">
+                    <div class="element-title">
+                        <h4 class="element-tittle-desc">Battery Detector</h4>
+                    </div>
+                    <div class="element-content">
+                            <h4 class="project-element--desc">A battery detector project determines battery levels, providing alerts or readings for efficient management of electronic devices. </h4>
+                    </div>
+                    <div class="element-link">
+                        <a href="" class="element-link-btn">Host</a>
+                    </div>
+                </div>
+                <div class="project__container-element">
+                    <div class="element-title">
+                        <h4 class="element-tittle-desc">Educational Website</h4>
+                    </div>
+                    <div class="element-content">
+                            <h4 class="project-element--desc">An educational website offers diverse resources, courses, and materials to facilitate learning and enhance knowledge acquisition for students worldwide. </h4>
+                    </div>
+                    <div class="element-link">
+                        <a href="" class="element-link-btn">Host</a>
+                    </div>
+                </div>
+                <div class="project__container-element">
+                    <div class="element-title">
+                        <h4 class="element-tittle-desc">Timer</h4>
+                    </div>
+                    <div class="element-content">
+                            <h4 class="project-element--desc">A stop timer project measures and displays elapsed time, commonly used for timing events, experiments, or sports activities.. </h4>
+                    </div>
+                    <div class="element-link">
+                        <a href="" class="element-link-btn">Host</a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <!--End projects-->
+
         <!-- Contact us-->
         <div class="contact" id="connectme">
             <div class="contact-tittle">
                 <h2 class="contact-tittle-desc">Connect Me</h2>
             </div>
-            <form action="" class="contact__form">
-                <div class="contact__form-element">
-                    <div class="contact--item">
-                        <label for="name">Name</label>
-                        <input type="text" placeholder="Enter the your Name" class="contact--item-inp" required>
+            <div class="contact-container">
+                <form action="" class="contact__form">
+                    <div class="contact__form-element">
+                        <div class="contact--item">
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="Enter the your Name" class="contact--item-inp" id="EmailName" required>
+                        </div>
+                        <div class="contact--item">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Enter the your Email" class="contact--item-inp" id="EmailId"  required>
+                        </div>
+                        <div class="contact--item">
+                            <label for="mobile">Mobile</label>
+                            <input type="number" placeholder="Enter the your Mobile" class="contact--item-inp" id="EmailMobile" required>
+                        </div>
+                        <div class="contact--item" >
+                            <label for="desc">Description</label>
+                            <textarea name="" id="EmailDesc" placeholder="Enter the Description" 
+                                class="contact--item-inp" required></textarea>
+                        </div>
                     </div>
-                    <div class="contact--item">
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="Enter the your Email" class="contact--item-inp" required>
+                    <div class="contact--item-submit">
+                        <button onclick="sendEmail(event)" class="contact--item-submit-ele">Submit</button>
                     </div>
-                    <div class="contact--item">
-                        <label for="mobile">Mobile</label>
-                        <input type="number" placeholder="Enter the your Mobile" class="contact--item-inp" required>
-                    </div>
-                    <div class="contact--item" >
-                        <label for="desc">Description</label>
-                        <textarea name="" id="" placeholder="Enter the Description"
-                            class="contact--item-inp" required></textarea>
-                    </div>
-                </div>
-                <div class="contact--item-submit">
-                    <button type="submit" class="contact--item-submit-ele">Submit</button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
         <!-- End Contact us-->
 
@@ -290,6 +362,7 @@
         </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 
 </html>
