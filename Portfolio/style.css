@@ -291,6 +291,7 @@ body {
     box-shadow: 0px 0px 0px 1px rgba(211, 204, 204, 0.233), 0px 0px 3px 1px;
     overflow-x: hidden;
     text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .experience-education {
