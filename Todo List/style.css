@@ -1,0 +1,194 @@
+.header{
+    background-color: black;
+    border-radius: 10px;
+}
+.header-desc{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+.container{
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 0px 0px 1px lightgrey,0px 0px 5px 3px lightgrey;
+}
+.todoListTask{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container__addTask-block{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.addTask-inp{
+     padding: 5px 25px 5px 10px; 
+    border:1px solid gray;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 250px;
+}
+.addTask-btn{
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+} 
+.container__displayTask{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.displayTask-ele{
+    min-width: 400px;
+} 
+.displayTask-ele-content{
+    margin-top: 20px;   
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1px 1px lightgray,0px 0px 4px .5px;
+} 
+.displayTask-ele--desc{
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    max-height: 100px;
+    overflow-x:hidden; 
+} 
+.displayTask-ele--options{
+    margin-top: -10px;
+    padding: 10px;
+}
+.displayTask-ele--options-btn{
+    display: flex;
+    gap:10px;
+    font-weight: bold;
+} 
+.displayTask-ele--options-btn-edit,.displayTask-ele--options-btn-delete{
+    color: blue;
+    font-weight: bold;
+    border:1px solid blue;
+    background-color: white;
+    font-size: 15px;
+    padding:5px  10px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.displayTask-ele--options-btn-delete{
+    color: red;
+    border:1px solid red;
+}
+button:hover{
+    transition: all .6s;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    border: none;
+} 
+
+.editTask{
+    transition: all 1s;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    position: fixed;
+    height: 60%;
+    width: 0%;
+    top: 10px;
+    right: 0;
+    overflow-x: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: .95;    
+}
+.editTask__close{
+    font-size: 20px;
+}
+
+.editTask__content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-grow: .5;
+    overflow-x: hidden;
+}
+
+.editTask__content--inp{
+    width: 90%;
+    line-height: 20px;
+    font-weight: bold;
+    border: 2px solid blue;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.editTask__options{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+} 
+
+.editTask__options-save,.editTask__options-cancel{
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+} 
+.editTask__options-save{
+    border: 1px solid green;
+    color: green;
+} 
+.editTask__options-cancel{
+    border: 1px solid red;
+    color: red;
+}
+
+.taskNotPresent{
+    display: none;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:460px){ 
+    .displayTask-ele{
+        transition: all 1s;
+        min-width: 250px;
+    }
+    .addTask-inp{
+        transition: all 1s;
+        width: 260px;
+        padding: 10px;
+    }
+    
+}
+@media screen and (max-width:310px){
+    .displayTask-ele{
+        transition: all 1s;
+        min-width: 0px;
+    }
+    .addTask-inp{
+        transition: all .81s;
+        width: 170px;
+        padding: 7px;
+    }
+}

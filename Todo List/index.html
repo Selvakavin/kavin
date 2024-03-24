@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List Selvakavin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d57a0d8c80.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h4 class="header-desc">Todo List</h4>
+    </div>
+    <div class="container">
+        <div class="todoListTask">
+            <div class="container__addTask">
+                <div class="container__addTask-block">
+                    <input type="text" class="addTask-inp" placeholder="Enter the new Task">
+                    <button class="addTask-btn">Add Task</button>
+                </div>
+            </div>
+            <div class="container__displayTask">
+                <!-- <div class="displayTask-ele">
+                        <div class="displayTask-ele-content">
+                            <h4 class="displayTask-ele--desc">Hello! I am new Task</h4>
+                            <div class="displayTask-ele--options">
+                                <div class="displayTask-ele--options-btn">
+                                    <button class="displayTask-ele--options-btn-edit">Edit</button>
+                                    <button class="displayTask-ele--options-btn-delete" onclick="deleteTask()">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+        <div class="taskNotPresent">
+            <h5>You don't have any task.</h5>
+        </div>
+    </div>
+    <div class="editTask">
+        <div class="editTask__close">
+            <i class="fa-solid fa-circle-xmark" onclick="closeEditTask()" style="cursor: pointer;"></i>
+        </div>
+        <div class="editTask__content">
+            <textarea class="editTask__content--inp"></textarea>
+        </div>
+        <div class="editTask__options">
+            <button class="editTask__options-save" onclick="editAction('save')">Save</button>
+            <button class="editTask__options-cancel" onclick="editAction('cancel')">Cancel</button>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
