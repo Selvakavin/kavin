@@ -72,6 +72,7 @@ body {
     box-shadow: none;
 }
 #theme{
+    
     background-color: black;
     cursor: pointer;
     border-radius: 50px;
@@ -88,6 +89,7 @@ body {
     display: none;
 }
 #theme:hover #themestatus{
+    
     display: block;
 }
 #theme:hover{
@@ -117,13 +119,18 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 0px;
+    
 }
 
 .home__profile {
     padding: 0px;
 }
 
-.home__profile--image,
+.home__profile__details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .about-me__container--image {
     border-radius: 150px;
     width: 250px;
@@ -133,26 +140,28 @@ body {
     cursor: pointer;
 } 
 .home__profile--image{
-    animation: imageAnime linear 1.8s;
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    animation: imageAnime 1.2s linear 1s;
 }
+
 .home__profile--image:hover{
     cursor: pointer;
-}
-.about-me__container--image:hover{
-    animation: aboutAnime linear 1s ;
+    animation: imageAnime 1s linear;
 }
 @keyframes imageAnime {
     0%{
-        width: 250px;
-        height: 250px;
+        margin: 0px;
     }
-    50%{
-        width: 150px;
-        height: 150px;
+    35%{
+        margin-left: 30px;
+    }
+    70%{
+        margin-right: 10px;
     }
     100%{
-        max-width: 250px;
-        max-height: 250px;
+        margin: 0px;
     }
     /* 0%{
         width: 50px;
@@ -166,17 +175,6 @@ body {
         max-width: 250px;
         max-height: 250px;
     } */
-}
-@keyframes aboutAnime {
-    0%{
-
-        transform: rotate(200deg);
-    }
-    100%{
-        
-        max-width: 250px;
-        max-height: 250px;
-    }
 }
 .home__profile-description {
     padding: 0px;
@@ -282,13 +280,13 @@ body {
 .about-me__content--text {
     font-size: 16px;
     text-indent: 70px;
-    max-width: 810px;
+    /*max-width: 810px;*/
     line-height: 23px;
-    background-color: white;
+    /*background-color: white;*/
     border-radius: 10px;
     padding: 10px;
     /* box-shadow: 0px 0px 0px 1px rgba(244, 243, 243, 0.909), 0px 0px 9px 1px; */
-    box-shadow: 0px 0px 0px 1px rgba(211, 204, 204, 0.233), 0px 0px 3px 1px;
+   /* box-shadow: 0px 0px 0px 1px rgba(211, 204, 204, 0.233), 0px 0px 3px 1px;*/
     overflow-x: hidden;
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
@@ -384,7 +382,6 @@ body {
     box-shadow: 0px 0px 0px .9px grey;
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 100%;
 }
 
